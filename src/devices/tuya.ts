@@ -5747,7 +5747,10 @@ export const definitions: DefinitionWithExtend[] = [
         extend: [m.battery()],
         exposes: [e.temperature(), e.humidity(), e.battery_voltage()],
         configure: tuya.configureMagicPacket,
-        whiteLabel: [tuya.whitelabel("Tuya", "RSH-HS06_1", "Temperature & humidity sensor", ["_TZ3000_zl1kmjqx"])],
+        whiteLabel: [
+            tuya.whitelabel("Tuya", "RSH-HS06_1", "Temperature & humidity sensor", ["_TZ3000_zl1kmjqx"]),
+            tuya.whitelabel("Tuya", "ZG-227ZL", "Temperature & humidity sensor", ["HOBEIAN"]),
+        ],
     },
     {
         fingerprint: tuya.fingerprint("SM0201", ["_TYZB01_cbiezpds", "_TYZB01_zqvwka4k"]),
